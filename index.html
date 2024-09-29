@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Benarji Mulakala</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+
+    <!-- idea: have a javascript animated loss function converging in the header? :p -->
+    <div id="dhead" class="container">
+      <div class="row">
+        <div id="dpic">
+          <img src="assets/image1.jpeg" class="ppic" />
+        </div>
+        <div id="ddesc">
+          <h1>Benarji Mulakala</h1>
+          <h2>I like to train deep neural nets... 🧠🤖</h2>
+          <div id="dico">
+            <a href="https://github.com/benarjii" target="_blank"><img src="assets/cgithub.svg" class="iico"/></a>
+            <a href="https://www.linkedin.com/in/benarjimulakala/" target="_blank"><img src="assets/inkedin-3.svg" class="iico" /></a>
+            <img src="assets/cemail.svg" style="cursor: pointer;" class="iico" id="iemail" title="click to reveal" />
+          </div>
+          <div id="demail"></div> <!-- will reveal email -->
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="history" class="container">
+
+      <div class="entry row">
+        <div class="timespan">
+          2022 - 2026
+        </div>
+        <div class="ico">
+          <div class="entry-dot"></div>
+          <img src="assets/image2.png" style="max-width: 32px;"/>
+        </div>
+        <div class="desc">
+          BE at Chandigarh University, India, with a major in Computer Science and Engineering and a specialization in Artificial Intelligence and Machine Learning. This is where I developed my interest in deep neural networks and artificial intelligence.
+        </div>
+      </div>
+    </div>
+
+    <div style="background-color: #eee; padding-top: 1px; margin-top: 50px; padding-bottom: 30px;">
+    <div class="container">
+      <div class="ctitle">writings</div>
+      <div><a href="https://medium.com/@benarji73" target="_blank">This</a> is my Medium account were i ocassionally write blogs on things related to maths and ai.</div>
+      <ul class="nodot">
+        <li>Sep 2024 <a></a></li>
+      </ul>
+    </div>
+    </div>
+
+    <div id="pet-projects" class="container">
+      <div class="ctitle">pet projects</div>
+
+      <div class="project">
+        <div class="pico"><img src="assets/image3.jpg" /></div>
+        <div class="pdesc"> I worked on this <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/9781394230952.ch9" target="_blank">project</a> in my very first semester using data from the <a href="https://exoplanetarchive.ipac.caltech.edu/" target="_blank">Nasa Exoplanet Archive</a> to predict the existence of exoplanets and classify them by size. I applied <a href="https://arxiv.org/abs/1106.1813" target="_blank">SMOTE</a> to balance the dataset before training various advanced machine learning models. Combining my interest in astronomy with data was a fun way to kick off my journey into machine learning.
+        </div> 
+        <div class="pend"></div>
+      </div>
+
+      <div class="project">
+        <div class="pico"><img src="assets/alpaca.jpg" /></div>
+        <div class="pdesc"> I fine-tuned the <a href="https://huggingface.co/meta-llama/Llama-2-7b" target="_blank">Llama-2-7B</a> model using the <a href="https://arxiv.org/abs/2106.09685" target="_blank">LoRA</a> technique and successfully ran it locally on my machine. The dataset i used was xyz.
+        </div> 
+        <div class="pend"></div>
+      </div>
+
+    <div class="container">
+      <div class="ctitle">publications</div>
+
+      <div class="pub">
+        <div class="pub-title"><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/9781394230952.ch9" target="_blank">Comparative Evaluation and Prediction of Exoplanets Using Machine Learning Methods</a></div>
+        <div class="pub-venue">Wiley 2023</div>
+        <div class="pub-authors">Divneet Singh Kapoor, Kiran Jot Singh, Ashirvad Singh, Benarji Mulakala</div>
+      </div>
+
+
+      <div>
+        <br>
+        Also on <a href="https://scholar.google.com/citations?user=FOOYCHsAAAAJ&hl=en" target="_blank">Google Scholar</a>
+      </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br>
+
+    <!-- attempt hiding from spambots :p -->
+    <script type="text/javascript">
+      const rot13 = (message) => {
+        const alpha = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLM';
+        return message.replace(/[a-z]/gi, letter => alpha[alpha.indexOf(letter) + 13]);
+      }
+      var e_is_shown = false;
+      document.getElementById('iemail').addEventListener("click", function(){
+        let demail = document.getElementById('demail');
+        let msg = "oranewv73" + "@" + "tznvy.pbz<oe>"
+        demail.innerHTML = rot13(msg);
+        demail.style.opacity = e_is_shown ? 0 : 1;
+        e_is_shown = !e_is_shown;
+      })
+    </script>
+  </body>
+</html>
